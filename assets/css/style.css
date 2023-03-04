@@ -1,0 +1,533 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1.vị trí
+2.kích thước
+3.màu sắc
+4.kiểu dáng 
+*/
+/* comon */
+.clear {
+    clear: both;
+}
+
+.whitecolor {
+    color: #fff !important;
+}
+
+.textcenter {
+    text-align: center !important;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.colum{
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.colum-full {
+    width: 100%;
+}
+
+.colum-2 {
+    width: 50%;
+}
+
+.colum-3 {
+    width: 33.33333%;
+}
+
+/* main */
+
+.dt-mail {
+    color: #088ecc;
+    cursor: pointer;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#khung {
+    display: inline-block;
+}
+
+#khung li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#khung li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 24px;
+    line-height: 46.5px;
+}
+
+#khung li:hover .conmore {
+    display: block;
+}
+
+#khung > li:hover > a,
+#khung .conmore li:hover a,
+.pay-ticket:hover, .modal-close:hover,
+#header .thanhbar:hover .icon-thanhbar {
+    color: #000;
+    background-color: #ccc;
+}
+
+#khung .conmore {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#khung .conmore a {
+    color: #000;
+    text-transform: none;
+    background-color: #fff;
+    min-width: 160px;
+    padding: 0 12px;
+    line-height: 38px;
+    list-style-type: none;
+}
+
+#khung .icon-arrow-down {
+    font-size: 12px;
+}
+
+#header .thanhbar,
+#header .khung-icon {
+    float: right;
+}
+
+#header .thanhbar {
+    display: none;
+}
+
+#header .khung-icon:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .icon-thanhbar,
+#header .icon-search {
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 23px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/css/image/sider/sider1.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+.textcontent {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.textheader {
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.textkeep {
+    font-size: 14px;
+    padding-bottom: 47px;
+    padding-top: 25px;
+}
+
+
+
+#content .phanchung-solec {
+    padding: 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#content .solec-header {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+#content .solec-slogan {
+    text-align: center;
+    font-style: italic;
+    padding-top: 25px;
+    opacity: 0.8;
+    font-size: 15px;
+
+}
+
+#content .text-content {
+    text-align: justify;
+    line-height: 1.4;
+    padding-top: 25px;
+    font-size: 15px;
+}
+
+#content .khunganh {
+    margin-top: 47px;
+}
+
+
+
+#content .tenanh {
+    font-size: 15px;
+}
+
+#content .anh {
+    border-radius: 4px;
+    width: 154px;
+    margin: 16px 0;
+}
+
+.tour-bu {
+    background-color: #000;
+}
+
+.ticker {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.ticker li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style-type: none;
+}
+
+.ticker .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticker .soluong {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin-top: -3px;
+}
+
+.datve {
+    padding-top: 32px;
+    padding-bottom: 47px;
+}
+
+.datve .anh-tour {
+    width: 100%;
+    display: block;
+}
+
+.datve .anh-tour:hover {
+    opacity: 0.6;
+}
+
+.datve .noidung {
+    background-color: #fff;
+    padding: 16px;
+    line-height: 1.4;
+}
+
+.datve .noidung .newyork {
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.datve .noidung .date {
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #757575;
+    ;
+}
+
+.datve .noidung .giaithich {
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.datve .noidung .buy {
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.datve .noidung .buy:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.contact-solec {
+    padding: 47px 16px;
+}
+
+/* contact */
+
+.info-contact {
+    font-size: 18px;
+}
+
+.info-contact i {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.6;
+}
+
+.form-contro {
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-contro1 {
+    margin: 16px 0;
+}
+
+.send-contact {
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    float: right;
+    cursor: pointer;
+    border: none;
+}
+
+.send-contact:hover {
+    opacity: 0.5;
+}
+
+.image-secson img {
+    width: 100%;
+}
+
+/* footer */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.i6con {
+    margin-bottom: 16px;
+}
+
+#footer p {
+    color: #000;
+    font-size: 15px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    position: relative;
+    max-width: calc(100% - 48px);
+    width: 900px;
+    min-height: 200px;
+    animation: container-fadein ease 0.6s;
+}
+
+.modal-header {
+    background-color: #009688;
+    text-align: center;
+    padding: 54px 0;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.person-body {
+    display: block;
+}
+
+.input-body {
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 26px;
+    border: 1px solid #ccc;
+}
+
+.pay-ticket {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.modal-help {
+    text-align: right;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.modal-help a {
+    color: #2196F3;
+    cursor: pointer;
+}
+
+@keyframes container-fadein{
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 765px) {
+    .full-width {
+        width: 100% !important;
+    }
+    .th-16 {
+        margin: 16px 0;
+    }
+    #content .phanchung-solec {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    #khung {
+        display: block;
+    }
+    #khung > li:first-child {
+    display: inline-block;
+    }
+    #khung li {
+    display: block;
+    }
+    #khung .conmore {
+        position: initial;
+    }
+    #khung .conmore a {
+        padding: 4px 40px;
+        color: #fff;
+        background-color: #333;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #header .khung-icon,
+    .textcontent {
+    display: none;
+    }
+    #header .thanhbar {
+    display: block;
+    }
+    #content .tenanh {
+        font-size: 16px;
+    }
+    #content .anh {
+        width: 60%;
+        margin: 8px 0 16px
+    }
+    .datve .noidung {
+        margin-bottom: 16px;
+    }
+    .colum-3 {
+        width: 100%
+    }
+    .contact-solec {
+        padding: 48px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #content .phanchung-solec {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
